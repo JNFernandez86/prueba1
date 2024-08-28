@@ -20,18 +20,15 @@ namespace PruebaConexionylista
         private void Form1_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocioart = new ArticuloNegocio();
-
-            dgvMarcas.Visible = false;
+                       
             dgvArticulos.DataSource = negocioart.listarart();
             dgvArticulos.Columns["Precio"].DefaultCellStyle.Format = "c";
+           
         }
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            dgvMarcas.Visible=true;
-            MarcaNegocio negocio = new MarcaNegocio();
-
-            dgvMarcas.DataSource = negocio.listar();
+            
         }
     }
 }

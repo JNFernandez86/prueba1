@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace PruebaConexionylista
 {
-    public class Articulo
+    public class Categoria
     {
-        public string Codigo { get; set; }
-        public string Nombre { get; set; }
+        public int Id_Cat { get; set; }
         public string Descripcion { get; set; }
-        public decimal Precio { get; set; }
     }
 }
